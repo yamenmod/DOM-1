@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  p{
+   font-size: larger;
+  }
+  div{
+    background-color: rgba(18, 50, 50, 0.3);
+    margin: 5%;
+    border: 5px solid rgb(255, 255, 255,0.4);
+    border-radius: 5rem;
+   text-align: center;
+
+  }
+  #div1{
+
+  }
+  body{
+    display: flex;
+    flex-direction: column;
+
+  
+  justify-content: center;
+    background-color: rgba(220, 147, 22, 0.5);
+  }
+.pointer{
+  pointer-events: none;
+
+}
+  .highlight{
+    background-color: yellow;
+    
+  }
+  .underline{
+    text-decoration: underline;
+  }
+  .bold{
+    font-weight: bold;
+  }
+
+  .show{
+    display: none;
+  }
+</style>
+
+<body>
+  <div id="div1">
+
+  <p id="para">nothing left to say</p>
+<input id="type"type="text" placeholder="enter class name" value="">
+<button onclick="addclass()">add</button>
+</div>
+
+<div>
+  <p id="p1">this the first paragraph</p>
+  <p id="p2">this is the second paragraph</p>
+  <p id="p3">this is the third paragraph</p>
+  
+  <button onclick="toggleVisibility('p1')">toggle first paragraph</button>
+  <button onclick="toggleVisibility('p2')" >toggle second paragraph</button>
+  <button onclick="toggleVisibility('p3')">toggle third paragraph</button>
+  <br>
+    <br>
+
+      <br>
+<button  onclick="click(this)">click me</button>
+
+</div>
+<script src="./js.js"></script>
+</body>
+
+</html>
